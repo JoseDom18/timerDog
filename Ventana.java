@@ -10,13 +10,13 @@ public class Ventana extends JFrame {
 
   public Ventana() {
 
-    setTitle("Timer Dog");
+    setTitle("DogTimer");
     setSize(500, 400);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setLayout(new FlowLayout());
     
-    etiqueta = new JLabel("Presiona para iniciar el TimerDog");
-    boton = new JButton("Presioname!");
+    etiqueta = new JLabel("Presiona para iniciar el DogTimer");
+    boton = new JButton("Start");
     
     add(etiqueta);
     add(boton);
@@ -24,7 +24,8 @@ public class Ventana extends JFrame {
     boton.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        etiqueta.setText("TimerDog iniciado");
+        etiqueta.setText("DogTimer iniciado");
+        boton.setText("Stop");
       }
     });
     
