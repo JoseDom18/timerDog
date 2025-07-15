@@ -22,7 +22,7 @@ public class Temporizador {
         mostrarTurno();
         reproducirSonido();
       }
-    }, 5 * 1000, 5 * 1000);
+    }, 30 * 60 * 1000, 30 * 60 * 1000);
 
   }
   
